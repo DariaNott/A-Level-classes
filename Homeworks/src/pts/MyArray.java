@@ -19,20 +19,20 @@ public class MyArray {
     }
 
     public void put(String st) {
-        if (str != null) {
-            for (int i = 0; i < str.length; i++) {
-                if (str[i] == null) {
-                    str[i] = st;
-                    if (i + 1 > str.length) {
-                        str = Arrays.copyOf(str, 2 * str.length);
-                    }
-                    break;
-                }
-            }
-        } else {
+        if (str == null) {
             str = new String[5];
-            str[0] = st;
         }
+
+        for (int i = 0; i < str.length; i++) {
+            if (str[i] == null) {
+                str[i] = st;
+                if (i + 1 > str.length) {
+                    str = Arrays.copyOf(str, 2 * str.length);
+                }
+                break;
+            }
+        }
+
     }
 
     public String get() {
