@@ -6,7 +6,9 @@ public class Rectangle extends Figure implements Productable, Summable {
 
     public Rectangle (int a, int b) {
         super("Rectangle");
+        parameterCheck(a);
         this.a=a;
+        parameterCheck(b);
         this.b=b;
     }
 

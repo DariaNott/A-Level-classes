@@ -12,4 +12,9 @@ public abstract class Figure implements Summable, Productable{
     public String getFiguresName (){
         return name;
     }
+    protected void parameterCheck (int a) {
+        if (a<1) {
+            throw new IllegalArgumentException();
+        }
+    }
 }

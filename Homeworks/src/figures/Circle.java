@@ -6,6 +6,7 @@ public class Circle extends Figure implements Productable, Summable {
 
     public Circle (int a) {
         super("Circle");
+        parameterCheck(a);
         this.a=a;
     }
 

@@ -5,6 +5,7 @@ public class Square extends Figure implements Productable, Summable {
 
     public Square (int a) {
         super("Square");
+        parameterCheck(a);
         this.a=a;
     }
 

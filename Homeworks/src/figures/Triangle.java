@@ -7,8 +7,11 @@ public class Triangle extends Figure implements Productable, Summable {
 
     public Triangle (int a, int b, int c) {
         super("Triangle");
+        parameterCheck(a);
         this.a=a;
+        parameterCheck(b);
         this.b=b;
+        parameterCheck(c);
         this.c=c;
     }
 
