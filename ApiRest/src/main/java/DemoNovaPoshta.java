@@ -20,7 +20,7 @@ import java.net.URISyntaxException;
 public class DemoNovaPoshta {
 
     @Test
-    public void api () throws URISyntaxException, IOException {
+    public void api() throws URISyntaxException, IOException {
         CloseableHttpClient httpClient = HttpClients.createDefault();
         URIBuilder builder = new URIBuilder();
         builder.setScheme("https")
